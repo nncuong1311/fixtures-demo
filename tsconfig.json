@@ -1,0 +1,27 @@
+{
+    "compilerOptions": {
+        "module": "commonjs",
+        "lib": ["es2020", "dom"],
+        "allowJs": true,
+        "outDir": "build",
+        "rootDir": "src",
+        "strict": true,
+        "noImplicitAny": false,
+        "noImplicitThis": true,
+        "resolveJsonModule": true,
+        "experimentalDecorators": true,
+        "esModuleInterop": true,
+        "target": "es5",
+        "moduleResolution": "node",
+        "sourceMap": true,
+        "baseUrl": ".",
+        "paths": {
+            "*": ["src/*", "node_modules/*"]
+        },
+        "strictFunctionTypes": true,
+        "strictNullChecks": false
+    },
+    "include": ["src/**/*.ts", "src/**/*.json"],
+    "exclude": ["node_modules", "dist"],
+    "typeRoots": ["src/@type", "./node_modules/@types"]
+}
